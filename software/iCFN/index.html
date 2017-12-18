@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Interconnected Cost Function Networks (iCFN): an exact algorithm for multistate protein design with substate ensembles</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-content">
+<div id="toptitle">
+<h1>Interconnected Cost Function Networks (iCFN): an exact algorithm for multistate protein design with substate ensembles</h1>
+</div>
+<h3>Introduction</h3>
+<p>Interconnected Cost Function Networks (iCFN) is an exact algorithm for computational protein design in which you can solve
+different problems such as:</p>
+<ul>
+<li><p>Side Chain packing</p>
+</li>
+<li><p>Protein design for single protein</p>
+</li>
+<li><p>Binding affinity toward multiple targets</p>
+</li>
+<li><p>Multistate protein design with single substate or multiple substates.</p>
+</li>
+</ul>
+<h3>Download</h3>
+<ul>
+<li><p>Download whole package of iCFN with binary code and sample data from <a href="iCFN_folder/iCFN.rar">here</a>.</p>
+</li>
+<li><p>Download just binary code from <a href="iCFN_folder/iCFN-v3">here</a>.</p>
+</li>
+<li><p>Download sample data for designing specificity for T-cell receptor (TCR)<br />
+at positions 26, 28, 98, 100 <a href="iCFN_folder/iCFN_data1.rar">data1</a>, <a href="iCFN_folder/iCFN_data2.rar">data2</a>, <a href="iCFN_folder/iCFN_data3.rar">data3</a> and <a href="iCFN_folder/iCFN_data4.rar">data4</a>.</p>
+</li>
+</ul>
+<h3>Pre-requisites and Installation</h3>
+<ul>
+<li><p>iCFN was developed and tested by C with gcc 4.4.7 compiler on CentOS 6.7 linux.</p>
+</li>
+</ul>
+<h3>Usage</h3>
+<div class="codeblock">
+<div class="blocktitle">Multistate design example</div>
+<div class="blockcontent"><pre>
+./run_protein_design_TCR_Multistate.sh 26 2 2 5 10 &gt; log_output &amp;
+</pre></div></div>
+<div class="codeblock">
+<div class="blocktitle">Positive design example</div>
+<div class="blockcontent"><pre>
+./run_protein_design_TCR_positive.sh 26 2 2 5 10 &gt; log_output &amp;
+</pre></div></div>
+<div class="codeblock">
+<div class="blocktitle">Arguments</div>
+<div class="blockcontent"><pre>
+-ecutDEE             Real value       Specify energy cutoff for side chain packing and pruning by type dependant DEE
+-ecutDEE_across      Real value       Specify energy cutoff for across substate type dependant DEE
+-ecutDEE_seq         Real value       Specify specificity cutoff for ensemble fo sequences
+-ecutDEE_stability   Real value       Specify stability cutoff for positive state from wild type
+-max_dis_seq         Integer value    Specify maximum number of discrepancy sequence can have from wild type
+-SNP_threshold       Integer value    Specify maximum SNP threshold sequence can have from wild type
+-max_conf_seq        Integer value    Specify maximum number of conformation for each substate
+-just_pos                             Specify condition to just solve positve protein design
+</pre></div></div>
+<h3>Version</h3>
+<p>Binary code is version 3.0 (updated in 9 April 2017).</p>
+<h3>Publication</h3>
+<p><b>Mostafa Karimi</b>, and Yang Shen, Interconnected Cost Function Networks (iCFN): an exact algorithm for multistate<br />
+protein design with substate ensembles, in preparation.</p>
+<h3>Contact</h3>
+<p>Please contact: <b>mostafa_karimi@tamu.edu</b> for any questions or comments.</p>
+<h3>License</h3>
+<p>Software provided to academic users under <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2017-10-13 14:47:17 Central Daylight Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
