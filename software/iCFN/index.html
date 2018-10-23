@@ -5,7 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Interconnected Cost Function Networks (iCFN): an exact algorithm for multistate protein design with substate ensembles</title>
+<title>Interconnected Cost Function Networks (iCFN): an efficient exact algorithm for multistate protein design with substate ensembles</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -24,10 +24,10 @@
                 </tr>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Interconnected Cost Function Networks (iCFN): an exact algorithm for multistate protein design with substate ensembles</h1>
+<h1>Interconnected Cost Function Networks (iCFN): an efficient exact algorithm for multistate protein design with substate ensembles</h1>
 </div>
 <h3>Introduction</h3>
-<p>Interconnected Cost Function Networks (iCFN) is an exact algorithm for computational protein design in which you can solve
+<p>Interconnected Cost Function Networks (iCFN) is an efficient exact algorithm for computational protein design in which you can solve
 different problems such as:</p>
 <ul>
 <li><p>Side chain packing</p>
@@ -38,6 +38,7 @@ different problems such as:</p>
 </li>
 <li><p>Multistate protein design with a single substate or multiple substates.</p>
 </li>
+iCFN is able to solve real-world large protein designs exactly (guaranteeing the global optimum or sub-optima) with fast speed and low memory.  
 </ul>
 <h3>Download</h3>
 <ul>
@@ -50,16 +51,18 @@ different problems such as:</p>
 <li><p>Download the whole package of iCFN with binary code and sample data from <a href="https://tinyurl.com/iCFN-2018">here</a> as well as the user manual from <a href="iCFN_manual.pdf">here</a> (update: Oct. 21, 2018).  Users can solve their own design problems with our code by supplying their own energy files (see details in the manual).  Moreover, if you use OSPREY for energy calculations of each substate, we have provided scripts in the package to convert OSPREY energy files into our format.</p>
 </li>
      
-<li><p>Download sample data for designing specificity for T-cell receptor (TCR)<br />
+<li><p>Download sample data for designing specificity for T-cell receptor (TCR) in our Bioinformatics 2018 paper<br />
 at positions 26, 28, 98, 100 <a href="https://goo.gl/78kg2i">data1</a>, <a href="https://goo.gl/WMvAPx">data2</a>, <a href="https://goo.gl/ndDvN2">data3</a> and <a href="https://goo.gl/qDKeWx">data4</a>.</p>
 </li>
 </ul>
 <h3>Pre-requisites and Installation</h3>
 <ul>
-<li><p>iCFN was developed and tested by C with gcc 4.4.7 compiler on CentOS 6.7 linux.</p>
+<li><p>iCFN was developed and tested in C with the compiler gcc 4.4.7 under CentOS 6.7 linux.</p>
 </li>
 </ul>
 <h3>Usage</h3>
+  See <a href="iCFN_manual.pdf">user manual</a> for details please. 
+  <!--
 <div class="codeblock">
 <div class="blocktitle">Multistate design example</div>
 <div class="blockcontent"><pre>
@@ -82,20 +85,23 @@ at positions 26, 28, 98, 100 <a href="https://goo.gl/78kg2i">data1</a>, <a href=
 -max_conf_seq        Integer value    Specify maximum number of conformation for each substate
 -just_pos                             Specify condition to just solve positve protein design
 </pre></div></div>
+-->
 <h3>Version</h3>
-<p>Binary code is version 3.0 (updated in 9 April 2017).</p>
-<h3>Publication</h3>
-<p><b>Mostafa Karimi</b>, and Yang Shen, Interconnected Cost Function Networks (iCFN): an exact algorithm for multistate<br />
-protein design with substate ensembles, in preparation.</p>
+<p>Binary code is version 3.0 (updated on Apr. 9 2017) with new scripts (updated on Oct. 21, 2018).</p>
+<h3>Reference</h3>
+<p>Mostafa Karimi and Yang Shen, Interconnected Cost Function Networks (iCFN): an efficient exact algorithm for multistate
+protein design, Bioinformatics 34(17), i811-i820.</p>
 <h3>Contact</h3>
-<p>Please contact: <b>mostafa_karimi@tamu.edu</b> for any questions or comments.</p>
-<h3>License</h3>
+<p>Please contact: <b>mostafa_karimi@tamu.edu</b> or <b>yshen@tamu.edu</b> for any questions or comments.</p>
+<!--
+  <h3>License</h3>
 <p>Software provided to academic users under <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
 <div id="footer">
 <div id="footer-text">
 Page generated 2017-10-13 14:47:17 Central Daylight Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
+-->
 </td>
 </tr>
 </table>
